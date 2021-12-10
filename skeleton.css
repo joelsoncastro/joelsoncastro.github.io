@@ -24,12 +24,14 @@
   #welcomeMessage{
     position:absolute;
     top:30%;
-    left:40%;
+    left:30%;
     width:40%;
     height:35%;
     border:4px solid #fff;
     font-size:24;
+    font-family: 'Source Sans 3', sans-serif;
     color: green;
+    border-radius: 2em;
   }
 
 
