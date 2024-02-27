@@ -1,61 +1,51 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./css/layout.css">
-  <script src="./js/script.js"></script>
+  <title>Interactive 3D Card</title>
 </head>
-
 <body>
 
-  <div id="button"
-    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 150px; background-color: black; border-radius: 8px; font-size: 34px;"
-    onclick="start()">
-    <div id="text_"
-      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
-      View Card</div>
+<div id="button" onclick="start()" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 300px; height: 150px; background-color: black; border-radius: 8px; font-size: 34px;">
+  <div id="text_" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center;">
+    View Card
   </div>
+</div>
 
-  </div>
-  <div id="card-wrapper">
-    <div id="card-1" class="card">
-      <div class="border">
-        <header>
-          <h2>@joelsoncastro</h2>
-          <h1 style="position: relative;  margin-top:220px;
-          height:25px; left:5px; right:5px; background-color: white; 
-          opacity:1; border-radius: 5px; padding-top:10px;">
-            <a href="https://www.linkedin.com/in/joelson-castro-53961525"
-              style="text-decoration: none; color: inherit; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">LinkdIn</a>
-          </h1>
-          <h1 style="position: relative;  margin-top: 20px; height:25px; left:5px; right:5px; background-color: white; 
-          opacity:1; border-radius: 5px; padding-top:10px;"><a href="https://twitter.com/joelson_castro"
-              style="text-decoration: none; color: inherit; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Twitter</a></h1>
-          <h1 style="position: relative;  margin-top: 20px; height:25px; left:5px; right:5px; background-color: white; 
-          opacity:1; border-radius: 5px; padding-top:10px;"><a href="https://medium.com/@castro.joelson"
-              style="text-decoration: none; color: inherit; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Medium</a></h1>
-        </header>
-      </div>
+<div id="card-wrapper" style="display: none;"> <!-- Ensure card wrapper is initially hidden -->
+  <div id="card-1" class="card">
+    <div class="border">
+      <header>
+        <h2>@joelsoncastro</h2>
+        <h1 style="margin-top: 220px; height: 25px; left: 5px; right: 5px; background-color: white; opacity: 1; border-radius: 5px; padding-top: 10px;">
+          <a href="https://www.linkedin.com/in/joelson-castro-53961525" style="text-decoration: none; color: inherit; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">LinkedIn</a>
+        </h1>
+        <h1 style="margin-top: 20px; height: 25px; left: 5px; right: 5px; background-color: white; opacity: 1; border-radius: 5px; padding-top: 10px;">
+          <a href="https://twitter.com/joelson_castro" style="text-decoration: none; color: inherit; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Twitter</a>
+        </h1>
+        <h1 style="margin-top: 20px; height: 25px; left: 5px; right: 5px; background-color: white; opacity: 1; border-radius: 5px; padding-top: 10px;">
+          <a href="https://medium.com/@castro.joelson" style="text-decoration: none; color: inherit; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">Medium</a>
+        </h1>
+      </header>
     </div>
   </div>
+</div>
 
-  <footer>
-    <div class="footer-content">
-      <p>&copy; 2023 Joelson Castro. All rights reserved. | Reference Page by <a href="#">VirtueSeed</a>.</p>
-      <p><a href="/terms">Terms of Service</a></p>
-    </div>
-  </footer>
-  <script>
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
-      alert("Please note that obtaining permissions is necessary to display the Reference Page for iOS users.")
-    }
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2023 Joelson Castro. All rights reserved. | Reference Page by <a href="#">VirtueSeed</a>.</p>
+    <p><a href="/terms">Terms of Service</a></p>
+  </div>
+</footer>
 
+<script src="./js/script.js"></script>
+<script>
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    alert("Please note that obtaining permissions is necessary to display the Reference Page for iOS users.")
+  }
+</script>
 
-
-  </script>
-
-  <script>
-
-  </script>
 </body>
-
 </html>
