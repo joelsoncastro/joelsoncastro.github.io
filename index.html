@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="./css/gm_skeleton_UX_containers_screen1.css">
+    <link rel="stylesheet" href="./css/gm_skeleton_UX_containers_screen2.css">
+    <link rel="stylesheet" href="./css/gm_skeleton_UX_containers_screen3.css">
+    <link rel="stylesheet" href="./css/gm_components_screen1.css">
+    <link rel="stylesheet" href="./css/gm_components_screen2.css">
+    <link rel="stylesheet" href="./css/gm_components_screen3.css">
+    <link rel="stylesheet" href="./css/gm_transition_screen1.css">
+    <script src="./js/gm_transitions.js"></script>
+    <script src="./js/gm_map_api.js"></script>
+    
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-mobile-web-capable" content="yes">
+    <link rel="icon" type="image/png" sizes="196x196" href="favicon-196.png">
+    <link rel="apple-touch-icon" href="apple-icon-180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-startup-image" href="/apple-splash-2048-2732.jpg"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-2732-2048.jpg"
+        media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-1668-2388.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-2388-1668.jpg"
+    media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-1536-2048.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-2048-1536.jpg"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-1668-2224.jpg"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2224-1668.jpg"
+        media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1620-2160.jpg"
+        media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2160-1620.jpg"
+        media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1290-2796.jpg"
+        media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2796-1290.jpg"
+        media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1179-2556.jpg"
+        media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2556-1179.jpg"
+        media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1284-2778.jpg"
+        media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2778-1284.jpg"
+        media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1170-2532.jpg"
+        media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2532-1170.jpg"
+        media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1125-2436.jpg"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2436-1125.jpg"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1242-2688.jpg"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-2688-1242.jpg"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-828-1792.jpg"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1792-828.jpg"
+        media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1242-2208.jpg"
+        media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="/apple-splash-2208-1242.jpg"
+        media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-750-1334.jpg"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1334-750.jpg"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-640-1136.jpg"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+        <link rel="apple-touch-startup-image" href="/apple-splash-1136-640.jpg"
+        media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+        
+        
+        <title>Google Maps Repica</title>
+    </head>
+    
+    <body>
+        
+        <!-- NOTE: these screens are separate css workinks. We'll then copy the css use js to convert the
+            css into objects or just the tag names so we can insert it from js -->
+            <!--------------------------------------   First Screen   ------------------------------------>
+            <!--  DISABLED-->
+            
+            <!-- Note: animations are attached in the gm:transition_screen1, for the screen transitions. 
+                The following tag should listen to events: onclick="animateItem()". Update where appropriate.
+            -->
+            
+            <div id="screen1_container">
+                <div id="gm_map_container_sc1"></div>
+                <div id="gm_header_container"></div>
+                <div id="gm_search_bar_container">
+                    <div id="gm_search_bar_subcontainer_sc1">
+                        
+                    </div>
+                    <div id="gm_google_pin_container_sc1">
+                        <object id="google_pin" type="image/svg+xml"
+                        data="/Google Maps/svg_icons/screen1/google_pin.svg"></object>
+                    </div>
+                    
+                    <div id="gm_form_container_sc1">
+                        <input id="location_search_sc1" type="text" id="location_search" name="location_search"
+                        value="Pesquisar aqui" onfocus="clearInputValue(this)" onblur="resetInputValue(this)">
+                    </div>
+                    <div id="gm_microphone_container">
+                        <object id="gm_microphone_sc1" type="image/svg+xml"
+                        data="/Google Maps/svg_icons/screen1/microphone.svg"></object>
+                    </div>
+                    <div id="gm_profile_picture_container">
+                        <object id=" " type="image/svg+xml" data="/Google Maps/svg_icons/screen1/profile_picture.svg"></object>
+            </div>
+        </div>
+        <div id="gm_category_container" class="center-container ">
+            
+            
+            <object id=" gm_restaurants_sc1" type="image/svg+xml"
+            data="/Google Maps/svg_icons/screen1/restaurants.svg"></object>
+            
+            
+            
+            <object id="gm_shopping_sc1 " type="image/svg+xml"
+            data="/Google Maps/svg_icons/screen1/shopping.svg"></object>
+            
+            
+            
+            <object id="gm_clothing_sc1 " type="image/svg+xml"
+            data="/Google Maps/svg_icons/screen1/clothing.svg"></object>
+            
+            <object id="gm_clothing_sc1 " type="image/svg+xml"
+            data="/Google Maps/svg_icons/screen1/clothing.svg"></object>
+            
+        </div>
+        
+        <div id="gm_map_controls_container_sc1">
+            <div id="gm_top_controls_container">
+                <object id="  " type="image/svg+xml" data="/Google Maps/svg_icons/screen1/weather.svg"></object>
+                <object id="gm_map_options_sc1" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen1/map_options.svg"></object>
+                
+                
+            </div>
+           
+        </div>
+        <div id="gm_drawer_container">
+            <div id="gm_bottom_controls_container1"></div>
+                <object id="gm_current_location_arrow_sc1" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen1/current_location_arrow.svg"></object>
+            
+            <div id="gm_bottom_controls_container2" onclick="animateItem()"></div>
+                <object id="gm_directions_arrow_sc1" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen1/directions_arrow.svg"></object>
+            
+
+            <div id="gm_drawer_title_sc1">Novidades na área </div>
+            <div id="gm_drawer_sub_title_sc1">Locais icónicos</div>
+            <object id="gm_image_1_sc1" type="image/svg+xml" data="/Google Maps/svg_icons/screen1/image_1.svg"></object>
+            <object id="gm_image_2_sc1" type="image/svg+xml" data="/Google Maps/svg_icons/screen1/image_2.svg"></object>
+            
+            
+        </div>
+        <div id="gm_menu_container">
+            <div id="gm_menu_subcontainer">
+            <span class="svg_container1"><object id="gm_location_menu_pin_sc3" type="image/svg+xml" data="/Google Maps/svg_icons/screen1/location_menu_pin.svg"></object></span>
+            <span class="svg_container2"><object id="gm_transport_menu_sc3" type="image/svg+xml" data="/Google Maps/svg_icons/screen1/transport_menu.svg"></object></span>
+            <span class="svg_container3"></span><object id="gm_save_menu_sc3" type="image/svg+xml" data="/Google Maps/svg_icons/screen1/save_menu.svg"></object></span>
+            <span class="svg_container4"></span><object id="gm_contribute_menu_sc3" type="image/svg+xml" data="/Google Maps/svg_icons/screen1/contribute_menu.svg"></object></span>
+            <span class="svg_container5"></span><object id="gm_notification_bell_menu_sc3" type="image/svg+xml"   data="/Google Maps/svg_icons/screen1/notification_bell_menu.svg"></object></span>
+            </div>
+        </div>
+        <div id="gm_footer_container"></div>
+    </div>  
+    
+    
+    <!--------------------------------------   Second Screen  sc(screen container) ------------------------------------>
+    
+    <!--  DISABLED-->
+        <div id="screen2_container">
+            <div id="gm_header_container_sc2"></div>
+            <div id="gm_form1_container_sc2">
+                <object id="" type="image/svg+xml" data="/Google Maps/svg_icons/screen2/back_arrow.svg"></object>
+                <object id="" type="image/svg+xml" data="/Google Maps/svg_icons/screen2/pulsating_locator.svg"></object>
+                <input id="current_location_input" type="text" id="current_location" name="current_location"
+                value="A Sua Localização">
+                <object id="" type="image/svg+xml" data="/Google Maps/svg_icons/screen2/meatblalls_menu.svg"></object>
+            </div>
+            <div id="gm_form1_gap_container_sc2">
+                <object id="" type="image/svg+xml" data="/Google Maps/svg_icons/screen2/kebab_menu.svg"></object>
+            </div>
+            <div id="gm_form2_container_sc2">
+                <object id="" type="image/svg+xml" data="/Google Maps/svg_icons/screen2/location_pin.svg"></object>
+                <input id="destination_input" type="text" id="destination" name="destination" value="Escolha o destino >">
+                <object id="" type="image/svg+xml" data="/Google Maps/svg_icons/screen2/destination_arrows.svg"></object>
+            </div>
+            <div id="gm_travel_method_container_sc2">
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/vehicle_car.svg"></object>
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/vehicle_train.svg"></object>
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/person_walk.svg"></object>
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/person_lift.svg"></object>
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/person_bicycle.svg"></object>
+            </div>
+            <div id="gm_map_container_sc2">
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/map_options.svg"></object>
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/search.svg"></object>
+            <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/current_location_arrow.svg"></object>
+        </div>
+        <div id="gm_drawer_container_sc2">
+            <div id="gm_drawer_sub_container1_sc2">
+                4Km (2km)
+            </div>
+            <div id="gm_drawer_sub_container2_sc2">
+                Trajeto mais rápido agora devido às condições de trânsito
+            </div>
+            <div id="gm_drawer_sub_container3_sc2">
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/steps.svg"></object>
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/start.svg"></object>
+                
+                <object type="image/svg+xml" data="/Google Maps/svg_icons/screen2/pin.svg"></object>
+            </div>
+        </div>
+        <div id="gm_footer_container_sc2">
+            Trânsito
+        </div>
+    </div>
+   
+    
+    
+    <!--------------------------------------   Third Screen  sc(screen container) ssc(subscreen container) ------------------------------------>
+    <!-- DISABLED 
+        <div id="screen3_container">
+            <div id="gm_header_container_sc3"></div>
+            <div id="gm_street_details_floating_container_sc3">
+                <object id="street_details_component_s3" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen3/street_details.svg"></object>
+            </div>
+            <div id="gm_map_controls_container_sc3">
+                <object id="search_component_s3" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen3/search.svg"></object>
+                <object id="compass_component_s3" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen3/compass.svg"></object>
+        </div>
+        <div id="gm_drawer_container_sc3">
+            <object id="route_component_s3" type="image/svg+xml"
+            data="/Google Maps/svg_icons/screen3/route.svg"></object>
+            <object id="exit_component_s3" type="image/svg+xml" data="/Google Maps/svg_icons/screen3/exit.svg"></object>
+        </div>
+        <div id="gm_location_conatiner_sc3">
+            <div id="gm_location_logo_container_ssc3">
+                <object id="location_control_component_s3" type="image/svg+xml"
+                data="/Google Maps/svg_icons/screen3/location_control.svg"></object>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div> 
+-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhcMpELUzbfxD5b_yofkS_-qms-UWLpfs&callback=initMap" async defer></script>
+<script src="./js/gm_micro_behaviours.js"></script>
+</body>
+
+</html>

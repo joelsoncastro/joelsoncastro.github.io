@@ -1,0 +1,13 @@
+<svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.5C2 10.5 1.5 7.66667 2.49998 7C3.99998 6 5 5.5 5 5.5M12 2C12 2 10.2394 4.65695 8.49999 5.5C7.41326 6.02669 5 5.5 5 5.5M5.49998 17L5 5.5" stroke="black"/>
+<path d="M6 17V5" stroke="black"/>
+<path d="M8 17V5" stroke="black"/>
+<path d="M7 12V5" stroke="black"/>
+<path d="M7.5 17V6" stroke="black"/>
+<path d="M6.5 11V6.5" stroke="black"/>
+<path d="M1.5 12V16.5H2.5V12" stroke="black"/>
+<circle cx="6" cy="2" r="2" fill="black"/>
+<path d="M6.5 6V8" stroke="black"/>
+<path d="M4.5 6C4.5 5.44772 4.94772 5 5.5 5V17H4.5V6Z" fill="black"/>
+<path d="M1 17V12" stroke="black"/>
+</svg>

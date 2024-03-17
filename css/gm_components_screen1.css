@@ -1,0 +1,216 @@
+/*
+    note: positions components into containers where necessary.
+ */
+
+@media only screen and (max-width: 390px) {
+  #gm_search_bar_subcontainer_sc1 {
+    position: absolute;
+  }
+
+  #gm_google_pin_container_sc1 {
+    position: absolute;
+    left: 14px;
+    top: 12px;
+    z-index: 2;
+  }
+
+  #gm_form_container_sc1 {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    right: 0px;
+  }
+
+  #location_search_sc1 {
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: 40px;
+    border: 0px dashed red;
+    border-radius: 50px;
+    z-index: -1;
+    filter: drop-shadow(0.5px 3px 5px #4a4a4a);
+  }
+
+  input {
+    outline: none;
+    padding-left: 45px;
+    font-size: 20px;
+    color: #83868a;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  #gm_microphone_sc1 {
+    position: absolute;
+    z-index: 1;
+  }
+
+  #gm_microphone_container {
+    position: absolute;
+    top: 19px;
+    right: 83px;
+  }
+
+  #gm_profile_picture_container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+  }
+
+  .center-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #gm_restaurants_sc1_container {
+    height: 100%;
+    width: 100px;
+  }
+  #gm_shopping_sc1_container {
+    height: 100%;
+    width: 100px;
+  }
+
+  #gm_clothing_sc1_container {
+    height: 100%;
+    width: 100px;
+  }
+
+  #gm_current_location_arrow_sc1 {
+    position: absolute;
+    //bottom: 53%;
+    top:-140px;
+    right: 3px;
+    z-index: 3;
+  }
+  #gm_directions_arrow_sc1 {
+    position: absolute;
+    //bottom: 40.5%;
+    top:-70px;
+    right: 3px;
+    z-index: 3;
+  }
+
+  #gm_drawer_title_sc1 {
+    position: absolute;
+    top: 35px;
+    height: 50px;
+    width: 100%;
+    font-height: 5px;
+    font-size: 20px;
+    left: 25px; /*Pushes the title forward*/
+  }
+
+  #gm_drawer_sub_title_sc1 {
+    position: absolute;
+    margin-top: calc(50px + 50px);
+    height: 50px;
+    width: 100%;
+    top: -5px;
+    left: 25px;
+    font-size: 15px;
+    font-height: 5px;
+  }
+
+  #gm_image_1_sc1 {
+    position: absolute;
+    top: calc(50px + 68px + 15px);
+    left: 29px;
+  }
+
+  #gm_image_2_sc1 {
+    position: absolute;
+    top: calc(50px + 68px + 15px);
+    left: 252px;
+  }
+
+  #gm_menu_subcontainer {
+    /*created to facilitate group control*/
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -20px;
+  }
+
+  #gm_location_menu_pin_sc3,
+  #gm_transport_menu_sc3,
+  #gm_save_menu_sc3,
+  #gm_contribute_menu_sc3,
+  #gm_notification_bell_menu_sc3 {
+    position: relative;
+    height: 20px;
+    padding-top: 8px;
+    padding-left: 50px;
+  }
+
+  .svg_container1::after {
+    content: "Explorar";
+    position: absolute;
+    padding-top: 30px;
+    margin-left: -30px;
+    font-size: 12px;
+    color: #3771e0;
+  }
+
+  .svg_container2::after {
+    content: "Ir";
+    position: absolute;
+    padding-top: 30px;
+    margin-left: -20px;
+    font-size: 12px;
+  }
+
+  .svg_container3::after {
+    content: "Guardado";
+    position: absolute;
+    padding-top: 30px;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  .svg_container4::after {
+    content: "Contribuir";
+    position: absolute;
+    padding-top: 30px;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+  .svg_container5::after {
+    content: "Novidades";
+    position: absolute;
+    padding-top: 30px;
+    font-size: 12px;
+    margin-left: 30px;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    // background-color:;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: black;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: green;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: yellow;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: grey;
+  }
+}
